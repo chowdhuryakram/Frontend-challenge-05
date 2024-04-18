@@ -1,4 +1,185 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: "Rubik", sans-serif;
+    background-color: #80808018;
+}
+.container{
+    max-width: 950px;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.post_number{
+    background-color: #80808018;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    height: 120px;
+}
+.post_number h4{
+    color: hsl(238, 40%, 52%);
+}
+.post_number h3{
+    color: hsl(239, 57%, 85%);
+}
+.text_top{
+    display: flex;
+    justify-content: space-between;
+}
+.post_owner{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.post_owner img{
+    max-width: 30px;
+}
+.post_owner h2{
+    color: hsl(212, 24%, 26%);
+    font-size: 18px;
+}
+.post_owner h3{
+    color: hsl(239, 57%, 85%);
+    font-size: 1hsl(223, 19%, 93%)px;
+    font-weight: 400;
+}
+.post_reply{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post_reply h4{
+    color: hsl(238, 40%, 52%);
+    font-size: 14px;
+}
+.post_reply i{
+    font-size: 15px;
+    color: hsl(238, 40%, 52%);
+}
+.post_text p{
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: hsl(212, 24%, 26%);
+}
+
+/* last_two_post */
+.post_owner .you{
+    background-color: hsl(238, 40%, 52%);
+    padding: 1px 5px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+}
+.post_reply .delete{
+    margin-right: 20px;
+}
+.last_two_post{
+    max-width: 950px;
+    margin-left: 225px;
+}
+.right_post{
+    max-width: 900px;
+    margin: auto;
+    border-left: 1px solid hsl(204, 7%, 87%);
+    padding-left: 60px;
+}
+.post_text a{
+    text-decoration: none;
+    color: hsl(238, 40%, 52%);
+    font-weight: 700;
+}
+
+/* Comment Box */
+.wrapper{
+    max-width: 950px;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.comment_box{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    
+}
+.text_box textarea{
+    width: 100%;
+    padding: 10px 50px 10px 10px;
+    border: 1px solid #dddddde8;
+    border-radius: 8px;
+}
+.author{
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+.author img{
+    width: 40px;
+    
+}
+.comment_box .btn{
+    text-align: right;
+    display: block;
+}
+.comment_box .btn button{
+    padding: 20px 40px;
+    color: #fff;
+    background-color: hsl(238, 40%, 52%);
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 810px) {
+    .post_owner h2{
+        font-size: 16px;
+    }
+    .post_owner h3{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .post_reply h4{
+        font-size: 12px;
+    }
+    .post_reply i{
+        font-size: 12px;
+    }
+    .post_text p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .last_two_post .post_owner h3{
+        display: none;
+    }
+    .last_two_post .you{
+        display: none;
+    }
+    .last_two_post{
+        max-width: 950px;
+        margin-left: 0;
+    }
+    .right_post{
+        max-width: auto;
+        margin: ;
+        border-left: none;
+        padding-left: 0;
+    }
+    
 }

@@ -4,32 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor Challenge</title>
 </head>
 <body>
-    <section class="twitter_post">
-        <div class="post flex justify-between">
+    <div class="twitter_post container">
+        <!-- first post -->
+        <div class="post">
             <div class="post_number">
                 <h3>+</h3>
                 <h4>12</h4>
-                <h5>-</h5>
+                <h3>-</h3>
             </div>
             <div class="post_text">
+                <div class="text_top">
+                    <div class="post_owner">
+                        <img src="images/avatars/image-amyrobson.png" alt="">
+                        <h2>amyrobson</h2>
+                        <h3>1 month ago</h3>
+                    </div>
+                    <div class="post_reply">
+                        <i class="fa-solid fa-reply"></i>
+                        <h4>Reply</h4>
+                    </div>
+                </div>
+                <p>A theory is the more impressive the greater is the simplicity of its premises, the more different are the kinds of things it relates and the more extended the range of its applicability. Magic of the nights is always much impressive than the magic of the days!</p>
+            </div>
+        </div>
+    </div>
+
+            <!-- second post -->
+   <div class="container">
+    <div class="post">
+        <div class="post_number">
+            <h3>+</h3>
+            <h4>5</h4>
+            <h3>-</h3>
+        </div>
+        <div class="post_text">
+            <div class="text_top">
                 <div class="post_owner">
-                    <img src="images/avatars/image-amyrobson.png" alt="">
-                    <h2>amyrobson</h2>
-                    <h3>1 month ago</h3>
+                    <img src="images/avatars/image-maxblagun.png" alt="">
+                    <h2>maxblagun</h2>
+                    <h3>2 weeks ago</h3>
                 </div>
                 <div class="post_reply">
                     <i class="fa-solid fa-reply"></i>
                     <h4>Reply</h4>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum deserunt beatae, doloremque provident corrupti neque blanditiis placeat excepturi odio.</p>
             </div>
+            <p>Newspapers do a good job telling me what happened yesterday, but they'd be a lot more impressive if they could tell me what's going to happen tomorrow. Magic of the nights is always much impressive than the magic of the days!</p>
         </div>
+    </div>
+   </div>
 
-    </section>
+   <!-- thirds post -->
+  <div class=" last_two_post">
+    <div class="right_post">
+        <div class="container">
+            <div class="post">
+                <div class="post_number">
+                    <h3>+</h3>
+                    <h4>4</h4>
+                    <h3>-</h3>
+                </div>
+                <div class="post_text">
+                    <div class="text_top">
+                        <div class="post_owner">
+                            <img src="images/avatars/image-ramsesmiron.png" alt="">
+                            <h2>ramsesmiron</h2>
+                            <h3>1 weeks ago</h3>
+                        </div>
+                        <div class="post_reply">
+                            <i class="fa-solid fa-reply"></i>
+                            <h4>Reply</h4>
+                        </div>
+                    </div>
+                    <p><a href="">@ramsesmiron</a> Newspapers do a good job telling me what happened yesterday, but they'd be a lot more impressive if they could tell me what's going to happen tomorrow. </p>
+                </div>
+            </div>
+           </div>
+        
+           <!-- four post -->
+           <div class="container">
+            <div class="post">
+                <div class="post_number">
+                    <h3>+</h3>
+                    <h4>2</h4>
+                    <h3>-</h3>
+                </div>
+                <div class="post_text">
+                    <div class="text_top">
+                        <div class="post_owner">
+                            <img src="images/avatars/image-juliusomo.png" alt="">
+                            <h2>juliusomo</h2>
+                            <h2 class="you">you</h2>
+                            <h3>2 days ago</h3>
+                        </div>
+                        <div class="post_reply">
+                            <img src="images/icon-delete.svg" alt="">                            
+                            <h4 class="delete">Delete</h4>
+                            <i class="fa-solid fa-edit"></i>
+                            <h4>Edit</h4>
+                        </div>
+                    </div>
+                    <p> <a href="">@juliusomo </a>NFrom its earliest days, the Cuban Revolution has also been a source of
+                        inspiration to all freedom-loving people. We admire the sacrifices of the Cuban people in maintaining their independence</p>
+                </div>
+            </div>
+           </div>
+      </div>
+  </div>
+
+  <!-- Comment section -->
+  <div class="wrapper">
+    <div class="comment_box">
+        <div class="author">
+            <img src="images/avatars/image-juliusomo.png" alt="">
+        </div>
+        <div class="text_box">
+            <textarea name="" id="" cols="30" rows="4" placeholder="Add a comment..."></textarea>
+        </div>
+        <div class="btn">
+            <button>Send</button>
+        </div>
+      </div>
+  </div>
 </body>
 </html>
